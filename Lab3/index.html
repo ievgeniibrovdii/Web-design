@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab2 Web-design</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="scripts/jscolor.js"></script>
+        <script src="scripts/ajax.js" defer></script>
+    </head>
+    <body>
+        <div id="mainTitle">
+            <h2>Текстовий редактор</h2>
+        </div>
+        <div id="textEditor">
+            <div id="titleArea">
+                <button id="boldButton" title="Bold"><b>B</b></button>
+                <button id="italicButton" title="Italic"><em>I</em></button>
+                <button id="underlineButton" title="Underlined"><ins>U</ins></button>
+                <button id="strikeButton" title="Strikethrough"><s>abc</s></button>
+                <button id="orderedListButton" title="List">(i)</button>
+                <button id="registerButton" title="Register">a-A</button>
+                <select id="fontSizeChanger"></select>
+                <input class="jscolor" id="fontColor" value="FBFF06" title="Change Font Color">
+                <input class="jscolor" id="highlightButton" value="12F3FF" title="Highlight Text">
+                <button id="linkButton" title="Create link">Link</button>
+                <button id="unlinkButton" title="Unlink">Unlink</button>
+            </div>
+
+            <div id="textArea">
+                <iframe id="editor" name="textingEditor" class="iframeForm"></iframe>
+            </div><br /><br />
+
+            <div id="submitButton" class="inputText">
+                <button id="showButton" name="submitButton" class="load">Submit</button>
+            </div>
+            <div id="clearButton" class="inputText">
+              <button id="resetButton" name="clearButton" class="load">Clear</button>
+            </div>
+        </div>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
